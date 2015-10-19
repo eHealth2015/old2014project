@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.e_health"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="enseirb.t3.e_health.activity.EHealth"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="enseirb.t3.e_health.bluetooth.BluetoothBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.FOUND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="enseirb.t3.e_health.bluetooth.BluetoothBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="enseirb.t3.e_health.activity.AuthentificationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="enseirb.t3.e_health.activity.Graph"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/measuresLabel"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="enseirb.t3.e_health.activity.GraphAlertActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/measuresLabel"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/measuresGraphicalActivity" >
+        </activity>
+        <activity
+            android:name="enseirb.t3.e_health.activity.AlertsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="enseirb.t3.e_health.activity.PatientRegistrationActivity"
+            android:label="@string/title_activity_patient_registration" >
+        </activity>
+        <activity
+            android:name="enseirb.t3.e_health.activity.DoctorRegistrationActivity"
+            android:label="@string/title_activity_doctor_registration" >
+        </activity>
+        <activity
+            android:name="enseirb.t3.e_health.activity.SplashScreen"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

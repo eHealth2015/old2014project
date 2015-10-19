@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#9AEBEF" >
+
+    <ImageView 
+        android:contentDescription="@string/imageSplash"
+   		android:id="@+id/splashImage"
+   		android:src="@drawable/ehealth"
+   		android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" />
+
+</RelativeLayout>

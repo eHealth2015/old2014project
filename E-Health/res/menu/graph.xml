@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 
+        android:id="@+id/action_bt"
+        android:orderInCategory="300"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_bluetooth"
+        android:title="@string/button_bluetooth"/>
+    <item 
+        android:id="@+id/action_A"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/button_A"/>
+    <item 
+        android:id="@+id/action_B"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/button_B"/>
+    <item 
+        android:id="@+id/action_C"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/button_C"/>
+    <item 
+        android:id="@+id/action_O"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/button_O"/>
+    <item 
+        android:id="@+id/action_P"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/button_P"/>
+    <item 
+        android:id="@+id/action_R"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/button_R"/>
+    <item 
+        android:id="@+id/action_T"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/button_T"/>
+    
+    <item 
+        android:id="@+id/deconnexion"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/deconnexion"/>
+
+</menu>
